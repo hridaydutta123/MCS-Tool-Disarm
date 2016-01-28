@@ -1,0 +1,37 @@
+ CREATE TABLE IF NOT EXISTS affected_areas (
+  fileid varchar(255) NOT NULL default '',
+  filename varchar(255) NOT NULL default '',
+  district varchar(55) default '',
+  block varchar(55) default '',
+  latitude varchar(50) default '',
+  longitude varchar(20) default '',
+  s_area varchar(55) default '',
+  characteristic varchar(55) default '',
+  worst_affected varchar(55) default '',
+  cond varchar(255) default '',
+  PRIMARY KEY  (fileid)
+);
+
+
+
+ CREATE TABLE IF NOT EXISTS shelter (
+  fileid varchar(255) NOT NULL default '',
+  filename varchar(255) NOT NULL default '',
+  type varchar(55) default '',
+  a_temp varchar(55) default '',
+  a_material varchar(50) default '',
+  gov_support varchar(10) default '',
+  other_source varchar(55) default '',
+  PRIMARY KEY  (fileid)
+);
+
+
+CREATE TABLE IF NOT EXISTS victim (
+  fileid varchar(255) NOT NULL default '',
+  filename varchar(255) NOT NULL default '',
+  type varchar(155) default '',
+  qty varchar(22) default '',
+  PRIMARY KEY  (fileid)
+);
+
+
